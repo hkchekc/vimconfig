@@ -12,6 +12,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
 
@@ -39,8 +41,11 @@ set showbreak=↳
 set backspace=indent,eol,start
 
 " some filetype things
+" tex
 let g:tex_flavor = "latex"
 
 " Some Plugin config
-let g:UltiSnipsExpandTrigger="<c-z>"
+" autocompletion
+let g:UltiSnipsExpandTrigger="<c-b>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "snip"]
+" tex live preview
