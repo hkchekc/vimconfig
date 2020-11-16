@@ -30,6 +30,7 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
+"runtimepath management
 
 
 " Some convenient settings
@@ -40,15 +41,15 @@ filetype plugin on
 set autoindent
 set showbreak=↳
 set backspace=indent,eol,start
-
+set nu " Show line number
+set updatetime=1500
+set hidden
 " some filetype things
 " tex
 let g:tex_flavor = "latex"
 
 " Some Plugin config
 " autocompletion
-let g:UltiSnipsExpandTrigger="<c-b>"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "snip"]
 " tex live preview
 
 " UltiSnips setup
